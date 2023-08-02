@@ -1,6 +1,6 @@
 import SignupForm from "./SignupForm";
 import LoginForm
- from "./CredsForm";
+ from "./LoginForm";
 function Getform(props){
     const login= props.issigned;
   

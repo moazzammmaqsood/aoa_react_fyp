@@ -1,7 +1,7 @@
 import React,{ useState , useEffect } from 'react';
 import BcAsset from '../assets/BcAsset.png';
 import asasayLogo from '../assets/asasayLogo.png';
-import LoginForm from './CredsForm'
+import LoginForm from './LoginForm'
 import SignupForm from './SignupForm'
 import Getform from './SwitchForm';
 

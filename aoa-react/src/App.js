@@ -1,6 +1,6 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Landingpage from './components/LandingPage.js'; 
+import Landingpage from './components/LandingPage.js';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { useState } from "react"; 
@@ -12,11 +12,11 @@ function App() {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
-  return (<>
+  return (
     <BrowserRouter>
     <Routes>
-      <Route path="/login" element={<LoginForm signin={1} />}></Route>
-      <Route path="/signup" element={<SignupForm signin={0} />}>
+      <Route path="/login" element={<Landingpage signin={1} />}></Route>
+      <Route path="/signup" element={<Landingpage signin={0} />}>
 
         {/* <Route index element={<Home />} /> */}
         {/* <Route path="blogs" element={<Blogs />} /> */}
@@ -25,7 +25,6 @@ function App() {
       </Route>
     </Routes>
   </BrowserRouter>
-  </>
   );
 }
 
